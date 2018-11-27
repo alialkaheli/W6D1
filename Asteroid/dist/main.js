@@ -104,7 +104,7 @@ eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src/moving_object.js\");\nwindow.MovingObject = MovingObject;\n\nconst Asteroid = __webpack_require__(/*! ./asteroid.js */ \"./src/asteroid.js\");\nwindow.Asteroid = Asteroid;\n\nconsole.log(\"Webpack is working!\");\n\nconst mo = new MovingObject([30, 30],[10, 10],  5, \"#00FF00\");\nwindow.mo = mo;\n\nconst as = new Asteroid([20,20]);\nwindow.as = as;\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function(){\n  const canvasEl = document.getElementById(\"game-canvas\");\n  canvasEl.width = 500;\n  canvasEl.height = 500;\n\n  const ctx = canvasEl.getContext(\"2d\");\n  mo.draw(ctx);\n  as.draw(ctx);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const MovingObject = __webpack_require__(/*! ./moving_object.js */ \"./src/moving_object.js\");\nwindow.MovingObject = MovingObject;\n\nconst Asteroid = __webpack_require__(/*! ./asteroid.js */ \"./src/asteroid.js\");\nwindow.Asteroid = Asteroid;\n\nconsole.log(\"Webpack is working!\");\n\nconst mo = new MovingObject([30, 30],[10, 10],  5, \"#00FF00\");\nwindow.mo = mo;\n\nconst as = new Asteroid([100,20]);\nwindow.as = as;\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function(){\n  const canvasEl = document.getElementById(\"game-canvas\");\n  canvasEl.width = 500;\n  canvasEl.height = 500;\n\n  const ctx = canvasEl.getContext(\"2d\");\n  mo.draw(ctx);\n  as.draw(ctx);\n});\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

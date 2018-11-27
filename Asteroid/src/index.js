@@ -9,7 +9,7 @@ console.log("Webpack is working!");
 const mo = new MovingObject([30, 30],[10, 10],  5, "#00FF00");
 window.mo = mo;
 
-const as = new Asteroid([20,20]);
+const as = new Asteroid([100,20]);
 window.as = as;
 
 
